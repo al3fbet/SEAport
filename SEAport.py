@@ -44,3 +44,13 @@ string_port = """
 # Email me or reach out if you think I can make this program better
 print(string_port)
 
+def clear():
+ 
+    # for windows
+    if os.name == 'nt':
+        _ = os.system('cls')
+ 
+    # for mac and linux(here, os.name is 'posix')
+    else:
+        _ = os.system('clear')
+clear()
